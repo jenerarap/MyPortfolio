@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/220f77e8b0.js" crossorigin="anonymous"></script>
+</head>
+<body>   
+   <div id="header">
+    <div class="container">
+        <nav>
+           <img src="logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li> 
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact me</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p id="p1">Electric-electronics, Robotics software</p>
+            <h1>Hi, I'm <span> Jener</span> <br> from Kosovo</h1>
+        </div>
+    </div>
+   </div>
+<!------------------------about-------------------------->   
+   <div id="about">
+    <div class="container">
+     <div class="row">
+<div class="about-col-1">
+    <img src="about me portre.JPG" id="portre">
+</div>
+<div class="about-col-2">
+    <h1 class="sub-title">About Me</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+<div class="tab-titles">
+<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+<p class="tab-links" onclick="opentab('experience')">Experience</p>
+<p class="tab-links" onclick="opentab('education')">Education</p>
+</div>
+<div class="tab-contents active-tab" id="skills">
+    <ul>
+        <li><span>Electric-electronics</span> <br>Electronic components&tools knowledge,<br>Electronic circuit board design,<br>Workshop experience, <br>etc.</li>
+        <br>
+        <li><span>Robotic Software</span> <br>Using and programming "Arduino" with C++ , <br>Using and programming "Micro:Bit" with javascript.</li>
+        <br>
+        <li><span>Web Development</span><br>HTML, <br> CSS, <br> Javascript, <br>Node.js , <br>Bootstrap.</li>
+        <br>
+        <li><span>3D design</span><br>Tinkercad, <br> Fusion360</li>
+        <li><span>Photoshop</span> <br> Adobe Photoshop</li>
+    </ul>
+</div>
+<div class="tab-contents" id="experience">
+    <ul>
+        <li><span>2018</span><br>Went to a Tailor Course </li>
+        <br>
+        <li><span>June 2020 - June 2021</span> <br>Tailor at "ArtaTex" textile company </li>
+        <br>
+        <li><span> 18-19 Nov 2021</span> <br>First place at "21st Century schools" competition (regional)</li>
+        <br>
+        <li><span>Sep 2020 - July 2022</span> <br>Went to the technology school "jCoders Academy"</li>
+        <br>
+        <li><span>June 2022 - August 2022</span><br>Tailor at "Intercom" textile company</li>
+        <br>
+        <li><span>June 2023 - August 2023</span><br>Tailor at "ArtaTex" textile company</li>
+        <br>
+        <li><span>August 2023</span><br>Introduction of 3D Design&Courses to Students at Yunus Emre Institute, Department of IT </li>
+        <br>
+        <li><span>20 Feb 2024 - ... </span><br>Electronics and Robotics Software teacher at Yunus Emre Institute, Department of IT</li>
+    </ul>
+</div>
+<div class="tab-contents" id="education">
+    <ul>
+        <li><span>Electric-electronics3</span> <br>Electronic components knowledge,<br>Electronic circuit board design, <br>etc.</li>
+        <br>
+        <li><span>Robotic Software</span> <br>Using and programming "Arduino" with C++ , <br>Using and programming "Micro:Bit" with javascript.</li>
+        <br>
+        <li><span>Web Development</span><br>HTML, <br> CSS, <br> Javascript, <br>Node.js , <br>Bootstrap.</li>
+    </ul>
+</div>
+</div>     
+     </div>
+    </div>
+   </div> 
+   <!--------------projects---------------------->
+   <div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+         <div> 
+            <h2>Plant Breeder</h2>  
+            <p>My first robotics project, "Plant Breeder
+                ATC" which I worked on for seven months, and won
+                1 place in the "21 st Century Schools" competition in 2021
+                that was organised in Western Balkan. When I built 
+                this project I was 14.</p>
+            <a href="plantbreeder.html">Learn more</a>
+        </div>
+        <div>
+            <h2>Chicken Incubator</h2>  
+            <p>Lorem Ipsum is simply dummy text of 
+                the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard
+                dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and
+               scrambled it to make a type specimen book.</p>
+            <a href="incubator.html">Learn more</a>
+          </div>
+        <div>
+            <h2>Excavator</h2>  
+            <p>Lorem Ipsum is simply dummy text of 
+               the printing and typesetting industry.
+               Lorem Ipsum has been the industry's standard
+               dummy text ever since the 1500s, 
+               when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.</p>
+          <a href="excavator.html">Learn more</a>
+          </div>
+    </div>
+   </div>
+</div>
+<div id="contact">
+<div class="container">
+<div class="row">
+    <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+       <br>
+        <p>jener.arap53@gmail.com</p>
+        <br>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/jenerarap1"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com/@jenerarap5864"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/yener.arap.3"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <br>
+    </div>
+    <div class="contact-right"></div>
+</div>
+</div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links")
+    var tabcontents=document.getElementsByClassName("tab-contents")
+    
+   function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    
+   } 
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px"
+    }
+</script>
+</body>
+</html>
