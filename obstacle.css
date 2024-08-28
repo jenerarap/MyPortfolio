@@ -93,3 +93,9 @@ span {
         max-width: 800px;
     }
 }
+@media only screen and (max-width: 600px) {
+    .image {
+        width: 90%; /* Make the images larger on mobile, but still within view */
+        margin: 5px; /* Reduce margin to fit more content on screen */
+    }
+}
