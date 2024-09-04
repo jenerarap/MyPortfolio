@@ -265,7 +265,11 @@ html {
         margin-bottom: 30px;
     }
     .about-col-2 {
-        font-size: 14px;
+        flex-basis: 100%;
+        max-width: 90%; /* Set a maximum width for the mobile version */
+        margin: 0 auto; /* Center the text container */
+        font-size: 14px; /* Adjust the font size for mobile readability */
+        line-height: 1.6; /* Adjust line height for readability */
     }
     .tab-links {
         font-size: 16px;
