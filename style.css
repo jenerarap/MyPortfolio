@@ -266,11 +266,10 @@ html {
     }
     .about-col-2 {
         flex-basis: 100%;
-        max-width: 90%; /* Set a maximum width for the mobile version */
-        margin: 0 auto; /* Center the text container */
-        font-size: 14px; /* Adjust the font size for mobile readability */
-        line-height: 1.6; /* Adjust line height for readability */
-    }
+        max-width: 90%; /* Keep the text slightly narrower */
+        margin-left: 10px; /* Add left margin to shift the text to the left */
+        font-size: 14px; /* Adjust font size for mobile */
+        line-height: 1.6; /* Maintain good readability */}
     .tab-links {
         font-size: 16px;
         margin-right: 20px;
