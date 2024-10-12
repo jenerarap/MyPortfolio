@@ -1,30 +1,288 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alarm System</title>
-    <link rel="stylesheet" href="incubator.css">
-    <script src="https://kit.fontawesome.com/220f77e8b0.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <a href="index.html" class="back-icon"><i class="fa-solid fa-circle-arrow-left"></i></a>
-    <div id="plant">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-2">
-                    <h1 class="sub-title">Alarm System</h1>
-                    <p>The projects purpose is to perceive any motion in room and activate the alarm.</p>
-                </div>
-                <div class="about-col-1">
-                    <video id="ilkvid" controls loop >
-                        <source src="alarm.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
 
+body {
+    background: #080808;
+    color: #fff;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
 
+#p1 {
+    font-size: 22px;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(backround.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    width: 140px;
+    max-width: 100%; /* Ensure logo fits within the screen */
+}
+
+.container {
+    padding: 10px 10%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #AF0B0B;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #AF0B0B;
+}
+
+/*-------------about--------------*/
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #AF0B0B;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #7E0808;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/*-------------projects-------------------*/
+#projects {
+    padding: 30px 0;
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.projects-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.8s;
+}
+
+.projects-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.projects-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #1a1818;
+    border: #1a1818;
+    border-style: dashed;
+}
+
+.projects-list div:hover {
+    background: #AF0B0B;
+    transform: translateY(-10px);
+}
+
+/*------------small screens-----------------*/
+nav .fa-solid {
+    display: none;
+}
+
+.social-icons .fa-brands {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden; /* Ensure no horizontal scroll */
+    }
+    #header {
+        background-image: url(phonebackg.jpg);
+    }
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1 {
+        font-size: 30px;
+    }
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+    nav ul {
+        background: #AF0B0B;
+        position: fixed;
+        top: 0;
+        right: -150px;
+        width: 150px;
+        height: 100vh;
+        padding-top: 50px;
+        transition: right 0.8s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title {
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+    .about-col-2 {
+        flex-basis: 100%;
+        max-width: 90%; /* Keep the text slightly narrower */
+        margin-left: 10px; /* Add left margin to shift the text to the left */
+        font-size: 14px; /* Adjust font size for mobile */
+        line-height: 1.6; /* Maintain good readability */}
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .projects-list {
+        display: block;
+    }
+    .projects-list div {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        text-align: left; /* Ensure text remains left-aligned */
+    }
+    .social-icons .fa-brands {
+        font-size: 30px;
+    }
+}
