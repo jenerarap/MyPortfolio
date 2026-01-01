@@ -2,201 +2,313 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Jener Arap | Robotics Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 
-    <title>MY PORTFOLIO</title>
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/220f77e8b0.js" crossorigin="anonymous"></script>
 </head>
-<body>   
+<body>
+    
+   <div id="scroll-progress"></div>
+
    <div id="header">
+    <div id="particles-js"></div>
+    
+    <nav>
+        <img src="logo.jpg" class="logo" alt="Logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li> 
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="http://www.youtube.com/@Mr.Atechs" target="_blank" class="yt-btn"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+        
     <div class="container">
-        <nav>
-           <img src="logo.jpg" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li> 
-                <li><a href="#projects">My Projects</a></li>
-                <li><a href="#contact">Contact me</a></li>
-                <li><a href="https://youtube.com/@Atechs24"></i> < YouTube ></a></li>
-                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
         <div class="header-text">
             <p id="p1">Electronics and Robotics Software</p>
-            <h1>Hi, I'm <span> Jener</span> </h1>
+            <h1>Hi, I'm <span class="typing-text">Jener</span></h1>
         </div>
     </div>
    </div>
-<!------------------------about------------------------>   
+
    <div id="about">
     <div class="container">
      <div class="row">
-<div class="about-col-1">
-    <img src="viber_image_2024-08-28_14-51-34-640.jpg" id="portre">
-</div>
-<div class="about-col-2">
-    <h1 class="sub-title">About Me</h1>
-    <p>
-        Im Jener ARAP, born in 2006 Prizren of Kosovo. I have a deep passion for robotics and programming, dedicating myself to advancing in this field and contributing to the progress of my country. I have been involved in robotics since the age of 11 and have always been immensely curious about this field. I have exerted considerable effort to progress in this field, attending technology schools, participating in competitions, and engaging in various robotic projects to gain more experience. Keep following;)</p>
-<div class="tab-titles">
-<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-<p class="tab-links" onclick="opentab('experience')">Experience</p>
-<p class="tab-links" onclick="opentab('education')">Education</p>
-<p class="tab-links" onclick="opentab('competitions')">Competitions</p>
-</div>
-<div class="tab-contents active-tab" id="skills">
-    <ul>
-        <li><span>Electric-electronics</span> <br>Electronic components&tools knowledge and usage,<br>Electronic circuit board design with AutoCad and Fritzing,<br>Workshop experience, <br>etc.</li>
-        <br>
-        <li><span>Robotic Software</span> <br>Using and programming "Arduino" with C++ , <br>Using and programming "Micro:Bit" with javascript.</li>
-        <br>
-        <li><span>Web Development</span><br>HTML, <br> CSS, <br> Javascript, <br>Node.js , <br>Bootstrap.</li>
-        <br>
-        <li><span>3D design&print</span><br>Tinkercad, <br> Fusion360.</li>
-        <br>
-        <li><span>Photoshop&Video</span> <br> Adobe Photoshop, <br>Capcut.</li>
-        <br>
-        <li><span>Microsoft office</span> <br> M.Powerpoint, <br> M.Word, <br> M.Excel, <br> M.Onenote.</li>
-    </ul>
-</div>
-<div class="tab-contents" id="experience">
-    <ul>
-        <li><span>June 2024 - September 2024 </span><br>Electronics and Robotics Software teacher at Bonevet Yunus Emre, excatly at Yunus Emre Institute - Department of IT. You can look it on Instagram, @bonevet_yee</li>
-        <br>
-        <li><span>August 2023</span><br>Introduction of 3D Design&Courses to Students in the framework of the program "Genç Komek" at Yunus Emre Institute, Department of IT. </li>
-        <br>
-        <li><span>Jan 2020 - Apr 2022</span> <br>Went to the "jCoders Academy"-STEM Certified, technology school.</li>
-        <br>
-        <li><span> 12 Nov 2021</span> <br>First place at "21st Century Schools" national competition, organised by British Government in Western Balkans.</li>
+        <div class="about-col-1">
+            <img src="viber_image_2024-08-28_14-51-34-640.jpg" id="portre" alt="Jener Portrait" class="neon-pulse">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Welcome! I'm Jener, and robotics has been my passion since I was 11. From building my first projects to competing in tech challenges, I’ve continuously pushed myself to explore, create, and innovate. <em>Cogito, creo, fabrico. :D</em> 
+            </p>
 
-    </ul>
-</div>
-<div class="tab-contents" id="education">
-    <ul>
-        <li><span>High School 2021-2024</span><br>"Gjon Buzuku" - Prizren</li> 
-        <br>
-        <li><span>Secondary School 2017-2021</span><br>"Hysen Rexhepi" - Prizren</li>
-        <br>
-        <li><span>Primary School 2012-2017</span> <br>"Abdyl Frashëri" - Prizren</li>
-        <hr>
-        <li><span>"jCoders Academy"-Technology School, Jan 2020-Apr 2022</span> <br>During these three academic years I learned: <br> <br>First year: Learning programmings basic logic by developing web games and apps,<br>Second year: Learning 3D design&print, Robotics&electronics. <br>Third year: Work on photo editing, compositing, and design using Adobe Photoshop.</li>
-    </ul>
-</div>
-<div class="tab-contents" id="competitions">
-<ul>
-    <li><span>Hackathon Prizren-Shkolla Digjitale</span><a href="https://www.facebook.com/share/p/u4dRif9wY7Q75pQa/?mibextid=xfxF2i" class="seemore"> - See more</a><br> The competition, which took place throughout the city, would announce the winner as the person who designed the best website after a two-day preparation period. However, due to a private reason, I could only participate in the project preparation phase of the competition and had to withdraw afterwards.</li>
-<li><span>21st Century Schools Kosova</span><a href="https://www.facebook.com/share/p/Kw4vTcnpqn6xEsDz/?mibextid=oFDknk" class="seemore"> - See more</a><br>On November 12, 2021, I participated in the robotics competition "21st Century Schools" organized by the United Kingdom in the Western Balkans and won first place🥇 nationally representing my school. The main idea of the competition was to create a project using the MicroBit microcontroller that benefits the community or improves and addresses its problems. I participated in this competition with my "Plant Breeder" project, which I worked on for 7 months.</li>
-<li><span>Hackathon#7 Kosova</span><a href="https://www.facebook.com/share/p/YPVWVosckMnwXt8s/?mibextid=xfxF2i" class="seemore"> - See more</a><br>The competition was divided into four main categories: 1) Health and Human Welfare, 2) Environment and Environmental Protection, 3) Education and Knowledge Sharing, and 4) Facilitating the Lives of Individuals with Special Needs. My team participated in the third category of the competition. The main objective of the competition was to develop software based on the specified categories to address problems and generate innovative solutions. Although we did not win first place in the competition but it was a good experience for us. I would like to mention that this was my first competition participation.</li>
-</ul>
-</div>
-</div>     
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('competitions')">Competitions</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+                <div class="skills-grid">
+                    <div class="skill-box">
+                        <i class="fa-solid fa-microchip"></i>
+                        <h3>Electronics</h3>
+                        <p>PCB Design, Circuitry, Sensors</p>
+                    </div>
+                    <div class="skill-box">
+                        <i class="fa-solid fa-robot"></i>
+                        <h3>Robotics</h3>
+                        <p>Arduino, ESP32, Micro:Bit</p>
+                    </div>
+                    <div class="skill-box">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Software</h3>
+                        <p>C++, Python, JavaScript</p>
+                    </div>
+                    <div class="skill-box">
+                        <i class="fa-solid fa-cubes"></i>
+                        <h3>3D Design</h3>
+                        <p>Fusion 360, Tinkercad</p>
+                    </div>
+                     <div class="skill-box">
+                        <i class="fa-solid fa-photo-film"></i>
+                        <h3>Media</h3>
+                        <p>Photoshop, Video Editing</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Jun 2024 - Sep 2024</span><br>Electronics & Software Instructor at Bonevet YEE Institute.</li>
+                    <li><span>August 2023</span><br>3D Design Instructor for "Genckomek" program at YEE Institute.</li>
+                    <li><span>Jan 2020 - Apr 2022</span><br>Student at "jCoders Academy" - STEM Certified School.</li>
+                    <li><span>12 Nov 2021</span><br>1st Place - "21st Century Schools" National Competition.</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2021 - 2024</span><br>"Gj. Buzuku" Natural Sciences Gymnasium</li> 
+                    <li><span>2020 - 2022</span><br>"jCoders Academy" Technology School<br><em>Studied: Programming logic, 3D Design, Robotics, Electronics, and Digital Design.</em></li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="competitions">
+                <ul>
+                    <li><span>21st Century Schools Kosova (1st Place)</span><a href="https://www.facebook.com/share/p/Kw4vTcnpqn6xEsDz/?mibextid=oFDknk" class="seemore" target="_blank"> - See more</a><br>Created "Plant Breeder" (Micro:Bit) to solve community agricultural problems.</li>
+                    <li><span>Hackathon #7 Kosova</span><a href="https://www.facebook.com/share/p/YPVWVosckMnwXt8s/?mibextid=xfxF2i" class="seemore" target="_blank"> - See more</a><br>Developed software for Education and Knowledge Sharing.</li>
+                </ul>
+            </div>
+        </div>     
      </div>
     </div>
    </div> 
-   <!--------------projects---------------------->
+
    <div id="projects">
     <div class="container">
         <h1 class="sub-title">My Projects</h1>
         <div class="projects-list">
-         <div> 
-            <h2>Plant Breeder</h2>  
-            <p>My first robotics project, "Plant Breeder
-                ATC" which I worked on for seven months, and won
-                1st place in the "21 st Century Schools" national competition in 2021
-                that was organised by British Government in Western Balkans. When I built 
-                this project I was 13-14.</p>
-            <a href="plantbreeder.html">Click here to learn more</a>
+            
+            <div class="project-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.5">
+                <img src="plantbreeder.jpg" alt="Plant Breeder Project">
+                <div class="layer">
+                    <h2>Plant Breeder</h2>  
+                    <p>Award-winning smart agriculture system built using Micro:Bit.</p>
+                    <a href="plantbreeder.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.5">
+                <img src="viber_image_2024-12-18_00-12-20-259.jpg" alt="Incubator Project">
+                <div class="layer">
+                    <h2>Chicken Incubator</h2>  
+                    <p>A fully automated chicken incubator machine built over 5 months.</p>
+                    <a href="incubator.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.5">
+                <img src="2.jpg" alt="Excavator Project">
+                <div class="layer">
+                    <h2>Hydraulic Excavator</h2>  
+                    <p>A hydro-mechanical system using syringes, built at age 11.</p>
+                    <a href="excavator.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.5">
+                 <img src="obstacle4.jpg" alt="Robot Project">
+                <div class="layer">
+                    <h2>Obstacle Robot</h2>  
+                    <p>An autonomous robot capable of detecting and avoiding obstacles.</p>
+                    <a href="obstacle.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.5">
+                 <img src="alarm.jpg" alt="Security Project">
+                <div class="layer">
+                    <h2>Home Security</h2>  
+                    <p>A motion-detection alarm system designed to secure room entry points.</p>
+                    <a href="alarm.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+             
+            <div class="project-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.5">
+                 <img src="rfidloc.png" alt="RFID Project">
+                <div class="layer">
+                    <h2>RFID Door Lock</h2>  
+                    <p>Secure access control system utilizing RFID technology.</p>
+                    <a href="doorlock.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
         </div>
-        <div>
-            <h2>Chicken Incubator</h2>  
-            <p>The most comprehenssive project I made until now. A chicken incubator machine which lasted 5 months to make it.</p>
-            <a href="incubator.html">Click here to learn more</a>
-          </div>
-        <div>
-            <h2>Hydraulic Excavator</h2>  
-            <p>I did this project, named "Hydraulic Excavator" , when I was around 11 years old.
-                This hydraulic excavator operates entirely on a hydro-mechanical system and incorporates a total of 6 syringes. </p>
-          <a href="excavator.html">Click here to learn more</a>
-          </div>
-          <div>
-            <h2>Obstacle Avoiding Robot</h2>  
-            <p>One of the projects my students made under my coordination.</p>
-          <a href="obstacle.html">Click here to learn more</a>
-          </div>
-          <div>
-            <h2>Home-Security System</h2>  
-            <p>This project involves creating a home-security alarm system that detects movements within a room.</p>
-          <a href="alarm.html">Click here to learn more</a>
-          </div>
-          <div>
-            <h2>Light-Sensitive Automatic Lamp</h2>  
-            <p>One of the projects my students made under my coordination.</p>
-          <a href="light.html">Click here to learn more</a>
-          </div>
-          <div>
-            <h2>Secure Box</h2>  
-            <p>One of the projects my students made under my coordination.</p>
-          <a href="secure.html">Click here to learn more</a>
-          </div>
-          <div>
-            <h2>Distance-Meter</h2>  
-            <p>The objective of this project is to design and build a distance measuring device that accurately measures the distance to an object</p>
-          <a href="distance.html">Click here to learn more</a>
-          </div>
-          <div>
-            <h2>RFID-Based Door Lock System</h2>  
-            <p>The objective of this project is to design and implement a secure door lock system that uses RFID technology for access control.</p>
-          <a href="doorlock.html">Click here to learn more</a>
-          </div>
-        </div>
-   </div>
-</div>
-<div id="contact">
-<div class="container">
-<div class="row">
-    <div class="contact-left">
-        <h1 class="sub-title">Contact Me</h1>
-       <br>
-        <p>jener.arap53@gmail.com</p>
-        <br>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/jenerarap1"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://youtube.com/@Atechs24"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://www.facebook.com/yener.arap.3"><i class="fa-brands fa-facebook"></i></a>
-        </div>
-        <br>
     </div>
-    <div class="contact-right"></div>
-</div>
-</div>
-</div>
+   </div>
+
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> <a href="mailto:jener.arap54@gmail.com" class="email-link">jener.arap54@gmail.com</a></p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/jenerarap1" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://www.youtube.com/@Mr.Atechs" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/yener.arap.3" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <p>Copyright © <script>document.write(new Date().getFullYear())</script> Jener Arap. <br> Robotics & Software Portfolio.</p>
+    </div>
+   </div>
+
+   <button onclick="topFunction()" id="backToTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
 <script>
-    var tablinks=document.getElementsByClassName("tab-links")
-    var tabcontents=document.getElementsByClassName("tab-contents")
-    
-   function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link");
-    }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
+    /* =========================================
+       1. BLOCK ZOOMING (Force Mobile Fix)
+       ========================================= */
+    // Prevent Pinch-to-Zoom
+    document.addEventListener('touchmove', function(event) {
+        if (event.scale !== 1) { event.preventDefault(); }
+    }, { passive: false });
+
+    // Prevent Double-Tap-to-Zoom
+    var lastTouchEnd = 0;
+    document.addEventListener('touchend', function(event) {
+        var now = (new Date()).getTime();
+        if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+        }
+        lastTouchEnd = now;
+    }, false);
+
+
+    /* =========================================
+       2. SECURITY: RIGHT CLICK & BLUR
+       ========================================= */
+    // Disable Right Click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Instant Blur on Click-Away
+    window.addEventListener('blur', () => {
+        document.body.classList.add('blur-content');
+        document.title = "Protected Content"; 
+    });
+
+    // Wait before Un-Blurring (Anti-Spam)
+    window.addEventListener('focus', () => {
+        setTimeout(() => {
+            document.body.classList.remove('blur-content');
+            document.title = "Jener Arap | Robotics Portfolio"; 
+        }, 300); 
+    });
+
+    // Disable Printing
+    document.addEventListener('keydown', function(e) {
+        if ((e.ctrlKey || e.metaKey) && (e.key === 'p' || e.key === 'P')) {
+            e.preventDefault();
+            alert('Printing is disabled.');
+        }
+    });
+
+    /* =========================================
+       3. VISUAL LOGIC
+       ========================================= */
+    // Scroll Progress
+    window.addEventListener('scroll', () => {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrollPercentage = (scrollTop / scrollHeight) * 100;
+        document.getElementById('scroll-progress').style.width = scrollPercentage + '%';
+    });
+
+    // Tab Logic
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){ tablink.classList.remove("active-link"); }
+        for(tabcontent of tabcontents){ tabcontent.classList.remove("active-tab"); }
         event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab")
+        document.getElementById(tabname).classList.add("active-tab");
     }
     
-   } 
+    // Mobile Menu
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){ sidemenu.style.right = "0"; }
+    function closemenu(){ sidemenu.style.right = "-200px"; }
+
+    // Particles Init
+    particlesJS("particles-js", { "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle" }, "opacity": { "value": 0.5, "random": false }, "size": { "value": 3, "random": true }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 3, "direction": "none", "random": false, "out_mode": "out" } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" } }, "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 1 } } } }, "retina_detect": true });
+
+    // Scroll Reveal Init
+    const sr = ScrollReveal({ distance: '60px', duration: 2500, delay: 400, reset: true });
+    sr.reveal('.header-text', {delay: 200, origin: 'left'});
+    sr.reveal('.about-col-1', {delay: 200, origin: 'bottom'});
+    sr.reveal('.about-col-2', {delay: 200, origin: 'right'});
+    sr.reveal('.sub-title', {delay: 100, origin: 'top'});
+    sr.reveal('.project-card', {interval: 200});
+    sr.reveal('.contact-left', {delay: 200, origin: 'left'});
+
+    // Back to Top Button
+    let mybutton = document.getElementById("backToTopBtn");
+    window.addEventListener('scroll', () => {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) { mybutton.style.display = "block"; } else { mybutton.style.display = "none"; } 
+    });
+    function topFunction() { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; }
+    
+    // 3D Tilt Init
+    VanillaTilt.init(document.querySelectorAll(".project-card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.5,
+    });
 </script>
-<script>
-    var sidemenu=document.getElementById("sidemenu")
-    function openmenu(){
-        sidemenu.style.right="0";
-    }
-    function closemenu(){
-        sidemenu.style.right="-200px"
-    }
-</script>
+
 </body>
 </html>
